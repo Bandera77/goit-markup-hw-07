@@ -23,6 +23,16 @@
           <a href="/" class="logo link"
             ><span class="logo-web">WEB</span>STUDIO</a
           >
+          <button
+            class="open-btn js-open-menu"
+            type="button"
+            aria-expanded="false"
+            aria-controls="mobile-menu"
+          >
+            <svg class="menu-icon">
+              <use href="./images/icons.svg#menu-burger"></use>
+            </svg>
+          </button>
           <ul class="nav-list list">
             <li class="item">
               <a class="nav-link link current" href="./index.html">Studio</a>
@@ -66,7 +76,7 @@
           <ul class="advantages-list list">
             <li class="item">
               <div class="advantages-box-icon">
-                <svg class="advantages-icon">
+                <svg class="advantages-icon" width="64" height="64">
                   <use href="./images/icons.svg#antenna-1"></use>
                 </svg>
               </div>
@@ -78,7 +88,7 @@
             </li>
             <li class="item">
               <div class="advantages-box-icon">
-                <svg class="advantages-icon">
+                <svg class="advantages-icon" width="64" height="64">
                   <use href="./images/icons.svg#clock-1"></use>
                 </svg>
               </div>
@@ -90,7 +100,7 @@
             </li>
             <li class="item">
               <div class="advantages-box-icon">
-                <svg class="advantages-icon">
+                <svg class="advantages-icon" width="64" height="64">
                   <use href="./images/icons.svg#diagram-1"></use>
                 </svg>
               </div>
@@ -102,7 +112,7 @@
             </li>
             <li class="item">
               <div class="advantages-box-icon">
-                <svg class="advantages-icon">
+                <svg class="advantages-icon" width="64" height="64">
                   <use href="./images/icons.svg#astronaut-1"></use>
                 </svg>
               </div>
@@ -122,29 +132,41 @@
           <ul class="work-list list">
             <li class="item">
               <img
+                srcset="
+                  ./images/desktop/work-section/desktop-app-360.jpg 1x,
+                  ./images/desktop/work-section/desktop-app-720.jpg 2x
+                "
                 class="work-pic"
                 width="360"
                 height="300"
-                src="./images/imac.jpg"
-                alt="imac"
+                src="./images/desktop/work-section/desktop-app-360.jpg"
+                alt="desktop-app"
               />
             </li>
             <li class="item">
               <img
+                srcset="
+                  ./images/desktop/work-section/mobile-app-360.jpg 1x,
+                  ./images/desktop/work-section/mobile-app-720.jpg 2x
+                "
                 class="work-pic"
                 width="360"
                 height="300"
-                src="./images/phone.jpg"
-                alt="phone"
+                src="./images/desktop/work-section/mobile-app-360.jpg"
+                alt="mobile-app"
               />
             </li>
             <li class="item">
               <img
+                srcset="
+                  ./images/desktop/work-section/ux-ui-design-360.jpg 1x,
+                  ./images/desktop/work-section/ux-ui-design-720.jpg 2x
+                "
                 class="work-pic"
                 width="360"
                 height="300"
-                src="./images/mobileversion.jpg"
-                alt="mobileversion"
+                src="./images/desktop/work-section/ux-ui-design-360.jpg"
+                alt="ux-ui-design"
               />
             </li>
           </ul>
@@ -157,10 +179,14 @@
           <ul class="team-list list">
             <li class="item">
               <img
+                srcset="
+                  ./images/team/mark-guerrero-264.jpg 1x,
+                  ./images/team/mark-guerrero-528.jpg 2x
+                "
                 class="team-foto"
                 width="264"
                 height="260"
-                src="./images/mark-guerrero.jpg"
+                src="./images/team/mark-guerrero-264.jpg"
                 alt="Mark Guerrero"
               />
               <div class="team-item-title">
@@ -168,28 +194,37 @@
                 <p class="team-text">Product Designer</p>
                 <ul class="social-list list">
                   <li class="item">
-                    <a class="social-link" href="https://www.instagram.com/">
+                    <a
+                      class="social-link link"
+                      href="https://www.instagram.com/"
+                    >
                       <svg class="team-icon">
                         <use href="./images/icons.svg#instagram-2"></use>
                       </svg>
                     </a>
                   </li>
                   <li class="item">
-                    <a class="social-link" href="https://twitter.com/">
+                    <a class="social-link link" href="https://twitter.com/">
                       <svg class="team-icon">
                         <use href="./images/icons.svg#twitter-1"></use>
                       </svg>
                     </a>
                   </li>
                   <li class="item">
-                    <a class="social-link" href="https://www.facebook.com/">
+                    <a
+                      class="social-link link"
+                      href="https://www.facebook.com/"
+                    >
                       <svg class="team-icon">
                         <use href="./images/icons.svg#facebook-1"></use>
                       </svg>
                     </a>
                   </li>
                   <li class="item">
-                    <a class="social-link" href="https://www.linkedin.com/">
+                    <a
+                      class="social-link link"
+                      href="https://www.linkedin.com/"
+                    >
                       <svg class="team-icon">
                         <use href="./images/icons.svg#linkedin-1"></use>
                       </svg>
@@ -200,10 +235,14 @@
             </li>
             <li class="item">
               <img
+                srcset="
+                  ./images/team/tom-ford-264.jpg 1x,
+                  ./images/team/tom-ford-528.jpg 2x
+                "
                 class="team-foto"
                 width="264"
                 height="260"
-                src="./images/tom-ford.jpg"
+                src="./images/team/tom-ford-264.jpg"
                 alt="Tom Ford"
               />
               <div class="team-item-title">
@@ -243,10 +282,14 @@
             </li>
             <li class="item">
               <img
+                srcset="
+                  ./images/team/camila-garcia-264.jpg 1x,
+                  ./images/team/camila-garcia-528 2x.jpg
+                "
                 class="team-foto"
                 width="264"
                 height="260"
-                src="./images/camila-garcia.jpg"
+                src="./images/team/camila-garcia-264.jpg"
                 alt="Camila Garcia"
               />
               <div class="team-item-title">
@@ -286,10 +329,14 @@
             </li>
             <li class="item">
               <img
+                srcset="
+                  ./images/team/daniel-wilson-264.jpg 1x,
+                  images/team/daniel-wilson-528.jpg   2x
+                "
                 class="team-foto"
                 width="264"
                 height="260"
-                src="./images/daniel-wilson.jpg"
+                src="./images/team/daniel-wilson-264.jpg"
                 alt="Daniel Wilson"
               />
               <div class="team-item-title">
@@ -523,6 +570,88 @@
         </form>
       </div>
     </div>
+
+    <!-- mobile menu -->
+
+    <div class="menu-container js-menu-container" id="mobile-menu">
+      <button class="close-btn js-close-menu">
+        <svg class="close-icon">
+          <use href="./images/icons.svg#close-icon"></use>
+        </svg>
+      </button>
+
+      <ul class="mobile-nav-list list">
+        <li class="item">
+          <a
+            class="mobile-nav-link current link"
+            href="/index.html"
+            class="link"
+            >Studio</a
+          >
+        </li>
+        <li class="item">
+          <a class="mobile-nav-link link" href="/portfolio.html" class="link"
+            >Portfolio</a
+          >
+        </li>
+        <li class="item">
+          <a class="mobile-nav-link link" href="/index.html" class="link"
+            >Contacts</a
+          >
+        </li>
+      </ul>
+      <ul class="mobile-contacts-list list">
+        <li class="item">
+          <a class="mobile-phone-link link" href="tel:+110001111111"
+            >+11 (000) 111-11-11</a
+          >
+        </li>
+        <li class="item">
+          <a class="mobile-mail-link link" href="mailto:info@devstudio.com"
+            >info@devstudio.com</a
+          >
+        </li>
+      </ul>
+
+      <ul class="social-list list">
+        <li class="item">
+          <a class="social-link link" href="https://www.instagram.com/">
+            <svg class="social-icon">
+              <use href="./images/icons.svg#instagram-2"></use>
+            </svg>
+          </a>
+        </li>
+        <li class="item">
+          <a class="social-link link" href="https://twitter.com/">
+            <svg class="social-icon">
+              <use href="./images/icons.svg#twitter-1"></use>
+            </svg>
+          </a>
+        </li>
+        <li class="item">
+          <a class="social-link link" href="https://www.facebook.com/">
+            <svg class="social-icon">
+              <use href="./images/icons.svg#facebook-1"></use>
+            </svg>
+          </a>
+        </li>
+        <li class="item">
+          <a class="social-link link" href="https://www.linkedin.com/">
+            <svg class="social-icon">
+              <use href="./images/icons.svg#linkedin-1"></use>
+            </svg>
+          </a>
+        </li>
+      </ul>
+    </div>
+
     <script src="./js/modal.js"></script>
+    <script
+      defer
+      src="https://cdnjs.cloudflare.com/ajax/libs/body-scroll-lock/3.1.5/bodyScrollLock.min.js"
+      integrity="sha512-HowizSDbQl7UPEAsPnvJHlQsnBmU2YMrv7KkTBulTLEGz9chfBoWYyZJL+MUO6p/yBuuMO/8jI7O29YRZ2uBlA=="
+      crossorigin="anonymous"
+    ></script>
+    <script defer src="js/mobile-menu.js"></script>
   </body>
 </html>
