@@ -1000,7 +1000,6 @@ img {
   display: flex;
   flex-direction: column;
   align-items: center;
-  justify-content: center;
   row-gap: 48px;
 }
 
@@ -1138,6 +1137,13 @@ img {
   border-radius: 4px;
 }
 
+@media screen and (max-width: 407px) {
+  .modal {
+    width: 100%;
+    /* height: 570px; */
+  }
+}
+
 .modal-btn {
   position: absolute;
   top: 24px;
@@ -1154,8 +1160,8 @@ img {
   border: 1px solid rgba(0, 0, 0, 0.1);
   cursor: pointer;
 
-  transition: background-color var(--transition-timing),
-    fill var(--transition-timing), border-color var(--transition-timing);
+  transition: border var(--transition-timing),
+    box-shadow var(--transition-timing);
 }
 
 .modal-btn:active,
@@ -1166,6 +1172,7 @@ img {
 }
 
 .close-icon {
+  display: block;
   width: 8px;
   height: 8px;
 }
@@ -1182,6 +1189,12 @@ img {
   letter-spacing: 0.02em;
 
   color: var(--dark-shadows-color);
+}
+
+@media screen and (max-width: 407px) {
+  .modal-text {
+    font-size: 4vw;
+  }
 }
 
 .modal-field {
@@ -1374,12 +1387,6 @@ img {
     0px 1px 1px rgba(46, 47, 66, 0.16), 0px 2px 1px rgba(46, 47, 66, 0.08);
 }
 
-.close-icon {
-  display: block;
-  width: 8px;
-  height: 8px;
-}
-
 .mobile-nav-list {
   margin-bottom: auto;
 }
@@ -1418,6 +1425,12 @@ img {
   color: var(--primary-brand-color);
 }
 
+@media screen and (max-width: 424px) {
+  .mobile-phone-link {
+    font-size: 24px;
+  }
+}
+
 .mobile-mail-link {
   font-weight: 700;
   font-size: 20px;
@@ -1430,6 +1443,12 @@ img {
   display: flex;
   justify-content: flex-start;
   gap: 56px;
+}
+
+@media screen and (max-width: 424px) {
+  .social-list {
+    gap: 26px;
+  }
 }
 
 .social-link {
